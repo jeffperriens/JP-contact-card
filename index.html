@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <title>Jeff Perriens (JP)</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #667085;
+      --line: #e5e7eb;
+      --button: #111827;
+      --buttonText: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+    }
+    .card {
+      width: min(100%, 430px);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 30px 24px 24px;
+      box-shadow: 0 14px 40px rgba(17,24,39,.10);
+      text-align: center;
+    }
+    .portrait {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 8px 24px rgba(17,24,39,.18);
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 30px;
+      line-height: 1.1;
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+    .jp {
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .title {
+      margin: 9px 0 26px;
+      font-size: 17px;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    .buttons {
+      display: grid;
+      gap: 12px;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 15px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      transition: transform .08s ease, opacity .08s ease;
+    }
+    .btn:active { transform: scale(.985); opacity: .9; }
+    .primary {
+      background: var(--button);
+      color: var(--buttonText);
+      border-color: var(--button);
+    }
+    .secondary {
+      background: #fff;
+      color: var(--text);
+    }
+    .details {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      text-align: left;
+    }
+    .row {
+      padding: 8px 2px;
+      font-size: 15px;
+      color: var(--muted);
+    }
+    .row a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .note {
+      margin: 22px 0 0;
+      font-size: 12px;
+      line-height: 1.45;
+      color: #8a94a6;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="portrait" src="portrait.jpg" alt="Jeff Perriens">
+    <h1>Jeff Perriens <span class="jp">(JP)</span></h1>
+    <div class="title">Retired IT Executive and Geek</div>
+
+    <div class="buttons">
+      <a class="btn primary" href="contact.vcf" download="Jeff-Perriens.vcf">Add Me to Contacts</a>
+      <a class="btn secondary" href="tel:+13019461141">Call Me</a>
+      <a class="btn secondary" href="mailto:perriens@gmail.com">Email Me</a>
+    </div>
+
+    <div class="details">
+      <div class="row">Mobile: <a href="tel:+13019461141">+1 301-946-1141</a></div>
+      <div class="row">Email: <a href="mailto:perriens@gmail.com">perriens@gmail.com</a></div>
+    </div>
+
+    <p class="note">Tap “Add Me to Contacts” to save my contact information.</p>
+  </main>
+</body>
+</html>
